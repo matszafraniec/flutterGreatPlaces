@@ -1,4 +1,4 @@
-package com.example.greatpleaces
+package com.example.greatplaces
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -9,6 +9,9 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="Great places"
         android:icon="@mipmap/ic_launcher">
+        <!-- Google Maps integration -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDjkZaFcEukHKTzSkkll1L_719FWAEzrQw"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -33,9 +36,6 @@
               android:name="io.flutter.embedding.android.SplashScreenDrawable"
               android:resource="@drawable/launch_background"
               />
-              <!-- Google Maps integration -->
-              <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyDjkZaFcEukHKTzSkkll1L_719FWAEzrQw"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
