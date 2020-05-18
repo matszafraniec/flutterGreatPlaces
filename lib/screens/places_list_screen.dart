@@ -21,7 +21,7 @@ class PlacesListScreen extends StatelessWidget {
             .fetchAndSetPlaces(),
         builder: (ctx, snapshot) => snapshot.connectionState ==
                 ConnectionState.waiting
-            ? Center(child: CircularProgressIndicator() )
+            ? Center(child: CircularProgressIndicator())
             : Consumer<GreatPlaces>(
                 child: Center(
                   child: const Text('No places yet, start adding some'),
@@ -36,6 +36,7 @@ class PlacesListScreen extends StatelessWidget {
                                 FileImage(greatPlaces.items[i].image),
                           ),
                           title: Text(greatPlaces.items[i].title),
+                          subtitle: Text(greatPlaces.items[i].location.address),
                           onTap: () {
                             // Go to details page
                           },
