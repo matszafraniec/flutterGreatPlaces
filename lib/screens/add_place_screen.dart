@@ -9,7 +9,7 @@ import '../providers/great_places.dart';
 import '../models/place.dart';
 
 class AddPlaceScreen extends StatefulWidget {
-  static const routName = 'addPlace';
+  static const routeName = 'addPlace';
 
   @override
   _AddPlaceScreenState createState() => _AddPlaceScreenState();
